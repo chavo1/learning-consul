@@ -1,22 +1,49 @@
 #!/usr/bin/env bash
 
-apt-get update -y
-apt-get install unzip socat jq dnsutils curl -y 
-
 SERVER_COUNT=${SERVER_COUNT}
+CONSUL=1.4.0
 
-# Install consul
-which consul || {
-pushd /usr/local/bin/
-wget https://releases.hashicorp.com/consul/1.4.0/consul_1.4.0_linux_amd64.zip
-unzip consul_1.4.0_linux_amd64.zip
-rm -fr consul_1.4.0_linux_amd64.zip
-popd
+
+# Install packages
+
+apt-get update -y
+which unzip socat jq dnsutils vim curl &>/dev/null || {
+apt-get install unzip socat jq dnsutils vim curl -y 
 }
 
+# Install consul
+#
+# consul file exist.
+CHECKFILE="/vagrant/consul_${CONSUL}_linux_amd64.zip"
+
+if [ -f "$CHECKFILE" ]; 
+then
+pushd /usr/local/bin/
+cp /vagrant/consul_${CONSUL}_linux_amd64.zip /usr/local/bin/consul_${CONSUL}_linux_amd64.zip
+unzip consul_${CONSUL}_linux_amd64.zip
+sudo chmod +x consul
+popd
+echo 'File is there, all good!'
+else
+
+# consul file not exist
+echo 'File is not there Downloading...'
+which consul || {
+pushd /usr/local/bin/
+wget https://releases.hashicorp.com/consul/1.4.0/consul_${CONSUL}_linux_amd64.zip
+unzip consul_${CONSUL}_linux_amd64.zip
+cp consul_${CONSUL}_linux_amd64.zip /vagrant/consul_${CONSUL}_linux_amd64.zip
+sudo chmod +x consul
+popd
+}
+fi
+
 cd /vagrant
+
 # Starting consul
+
 killall consul
+
 IPs=$(hostname -I | cut -f2 -d' ')
 
 set +x
