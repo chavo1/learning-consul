@@ -51,7 +51,7 @@ set +x
 cd /vagrant
 consul agent -server -ui -bootstrap-expect=$SERVER_COUNT \
     -data-dir=/tmp/consul -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 \
-    -enable-script-checks=true -config-dir=consul.d -retry-join=192.168.56.52 -retry-join=192.168.56.51> /tmp/consul.log &
+    -enable-script-checks=true -config-dir=consul.d -retry-join=192.168.56.52 -retry-join=192.168.56.51 > /tmp/consul.log &
 sleep 5
 set +x
 
