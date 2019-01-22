@@ -1,9 +1,9 @@
 {
     "checks": [
         {
-            "id": "ssh",
-            "name": "SSH TCP on port 22",
-            "tcp": "localhost:22",
+            "id": "http",
+            "name": "HTTP TCP on port 80",
+            "tcp": "localhost:80",
             "interval": "10s",
             "timeout": "1s"
           },
