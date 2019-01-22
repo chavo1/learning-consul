@@ -1,2 +1,4 @@
-{"service": {"name": "web", "tags": ["rails"], "port": 80,
-  "check": {"args": ["curl", "localhost"], "interval": "10s"}}}
+{"service": {"name": "web", "tags": ["nginx"], "port": 80,
+  "check": {"args": ["curl", "localhost"], "interval": "3s"}}}
+
+  

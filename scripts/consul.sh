@@ -45,15 +45,32 @@ cd /vagrant
 killall consul
 
 IPs=$(hostname -I | cut -f2 -d' ')
+HOST=$(hostname)
 
-set +x
+
+if [[ $HOST =~ consul-server* ]]; 
+then
 
 cd /vagrant
-consul agent -server -ui -bootstrap-expect=$SERVER_COUNT \
-    -data-dir=/tmp/consul -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 \
-    -enable-script-checks=true -config-dir=consul.d -retry-join=192.168.56.52 -retry-join=192.168.56.51 > /tmp/consul.log &
+
+consul agent -server -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
+-bootstrap-expect=$SERVER_COUNT -retry-join=192.168.56.52 \
+-retry-join=192.168.56.51 -retry-join=192.168.56.61> /tmp/consul.log & 
+
 sleep 5
-set +x
+
+else
+
+cd /vagrant
+
+consul agent -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
+ -enable-script-checks=true -config-dir=consul.d -retry-join=192.168.56.52 \
+ -retry-join=192.168.56.51 -retry-join=192.168.56.61> /tmp/consul.log & 
+
+sleep 5
+
+
+fi
 
 consul reload
 
