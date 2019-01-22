@@ -1,5 +1,5 @@
 SERVER_COUNT = 2
-CLIENT_COUNT = 1
+CLIENT_COUNT = 2
 
 Vagrant.configure(2) do |config|
     config.vm.box = "chavo1/xenial64base"
@@ -17,8 +17,8 @@ Vagrant.configure(2) do |config|
       config.vm.define "consul-client0#{n}" do |client|
         client.vm.hostname = "consul-client0#{n}"
         client.vm.network "private_network", ip: "192.168.56.#{60+n}"
-        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh"
         client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul.sh", env: {"CLIENT_COUNT" => CLIENT_COUNT}
+        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh", env: {"CLIENT_COUNT" => CLIENT_COUNT}
         
       end
     end
