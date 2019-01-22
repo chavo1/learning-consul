@@ -16,6 +16,18 @@ sudo cat <<EOF > /etc/consul.d/web.json
 "check": {"args": ["curl", "localhost"], "interval": "3s"}}}
 EOF
 
+sudo cat <<EOF > /etc/consul.d/http.json
+{
+  "check": {
+    "id": "http",
+    "name": "http TCP on port 80",
+    "tcp": "127.0.0.1:80",
+    "interval": "10s",
+    "timeout": "1s"
+  }
+}
+EOF
+
 killall consul
 
 consul agent -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
