@@ -1,0 +1,20 @@
+{
+    "checks": [
+        {
+            "id": "ssh",
+            "name": "SSH TCP on port 22",
+            "tcp": "localhost:22",
+            "interval": "10s",
+            "timeout": "1s"
+          },
+          {
+              "id": "mem-util",
+              "name": "Memory utilization",
+              "args": ["/vagrant/consul.d/check_mem.sh", "256MB"],
+              "interval": "5s",
+              "timeout": "1s"
+          }
+    
+    ]
+  }
+  
