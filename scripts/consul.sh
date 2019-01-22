@@ -38,8 +38,6 @@ popd
 }
 fi
 
-cd /vagrant
-
 # Starting consul
 
 killall consul
@@ -51,27 +49,11 @@ HOST=$(hostname)
 if [[ $HOST =~ consul-server* ]]; 
 then
 
-cd /vagrant
-
 consul agent -server -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
--bootstrap-expect=$SERVER_COUNT -retry-join=192.168.56.52 \
--retry-join=192.168.56.51 -retry-join=192.168.56.61> /tmp/consul.log & 
+-bootstrap-expect=$SERVER_COUNT -dns-port=53 -retry-join=192.168.56.52 \
+-retry-join=192.168.56.51 -retry-join=192.168.56.61 -retry-join=192.168.56.62 > /tmp/consul.log & 
 
 sleep 5
-
-else
-
-cd /vagrant
-
-consul agent -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
- -enable-script-checks=true -config-dir=consul.d -retry-join=192.168.56.52 \
- -retry-join=192.168.56.51 -retry-join=192.168.56.61> /tmp/consul.log & 
-
-sleep 5
-
 
 fi
 
-consul reload
-
-consul members
