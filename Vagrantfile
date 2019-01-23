@@ -1,6 +1,6 @@
-SERVER_COUNT = 2
+SERVER_COUNT = 1
 CLIENT_COUNT = 2
-CONSUL_VERSION = '1.2.0'
+CONSUL_VERSION = '1.4.0'
 
 Vagrant.configure(2) do |config|
     config.vm.box = "chavo1/xenial64base"
@@ -19,9 +19,16 @@ Vagrant.configure(2) do |config|
         client.vm.hostname = "consul-client0#{n}"
         client.vm.network "private_network", ip: "192.168.56.#{60+n}"
         client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul.sh", env: {"CONSUL_VERSION" => CONSUL_VERSION}
-        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/dns.sh"
         client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh"
         
       end
+    end
+
+    config.vm.define "consul-dns" do |dns|
+      dns.vm.hostname = "consul-dns"
+      dns.vm.network "private_network", ip: "192.168.56.70"
+      dns.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul.sh", env: {"CONSUL_VERSION" => CONSUL_VERSION}
+      dns.vm.provision "shell",inline: "cd /vagrant ; bash scripts/dns.sh"
+
     end
   end

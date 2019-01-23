@@ -10,10 +10,21 @@ HOST=$(hostname)
 
 
 sudo mkdir -p /etc/consul.d
-
+#####################
+# Register services #
+#####################
 sudo cat <<EOF > /etc/consul.d/web.json
-{"service": {"name": "web", "tags": ["$HOST"], "port": 80,
-"check": {"args": ["curl", "127.0.0.1"], "interval": "3s"}}}
+{
+  "service": {
+    "name": "web",
+    "tags": ["$HOST"],
+    "port": 80,
+  "check": {
+    "args": ["curl", "127.0.0.1"],
+    "interval": "3s"
+    }
+  }
+}
 EOF
 
 sudo cat <<EOF > /etc/consul.d/http.json
@@ -30,13 +41,13 @@ EOF
 
 # Starting consul clients
 
-killall consul
+# killall consul
 
-consul agent -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
- -enable-script-checks=true -config-dir=/etc/consul.d -retry-join=192.168.56.52 \
- -retry-join=192.168.56.51 -retry-join=192.168.56.61 -retry-join=192.168.56.62 > /tmp/consul.log & 
+# consul agent -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
+#  -enable-script-checks=true -config-dir=/etc/consul.d -retry-join=192.168.56.52 \
+#  -retry-join=192.168.56.51 -retry-join=192.168.56.61 -retry-join=192.168.56.62 > /tmp/consul.log & 
 
-sleep 5
+# sleep 5
 
 consul reload
 
