@@ -7,8 +7,8 @@ CONSUL=1.4.0
 # Install packages
 
 apt-get update -y
-which unzip socat jq dnsutils vim curl dnsmasq &>/dev/null || {
-apt-get install unzip socat jq dnsutils vim curl dnsmasq -y 
+which unzip socat jq dnsutils vim curl &>/dev/null || {
+apt-get install unzip socat jq dnsutils vim curl -y 
 }
 
 # Install consul
@@ -38,21 +38,9 @@ popd
 }
 fi
 
-# Consul DNS to be resolved as well as external
-
-sudo echo "server=/consul/127.0.0.1#8600" > /etc/dnsmasq.d/10-consul
-
-sudo sed -i 's/#resolv-file=/resolv\-file=\/etc\/dnsmasq.d\/external.conf/g' /etc/dnsmasq.conf
-
-cat << EOF > /etc/dnsmasq.d/external.conf
-server=8.8.8.8
-EOF
-
-sudo systemctl restart dnsmasq
-
 killall consul
 
-# Starting consul server
+# Starting consul servers
 
 IPs=$(hostname -I | cut -f2 -d' ')
 HOST=$(hostname)

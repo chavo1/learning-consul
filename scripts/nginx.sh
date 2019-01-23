@@ -28,6 +28,8 @@ sudo cat <<EOF > /etc/consul.d/http.json
 }
 EOF
 
+# Starting consul clients
+
 killall consul
 
 consul agent -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
