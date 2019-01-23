@@ -18,7 +18,8 @@ Vagrant.configure(2) do |config|
         client.vm.hostname = "consul-client0#{n}"
         client.vm.network "private_network", ip: "192.168.56.#{60+n}"
         client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul.sh", env: {"CLIENT_COUNT" => CLIENT_COUNT}
-        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh", env: {"CLIENT_COUNT" => CLIENT_COUNT}
+        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/dns.sh"
+        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh"
         
       end
     end
