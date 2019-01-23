@@ -13,7 +13,7 @@ sudo mkdir -p /etc/consul.d
 
 sudo cat <<EOF > /etc/consul.d/web.json
 {"service": {"name": "web", "tags": ["$HOST"], "port": 80,
-"check": {"args": ["curl", "localhost"], "interval": "3s"}}}
+"check": {"args": ["curl", "127.0.0.1"], "interval": "3s"}}}
 EOF
 
 sudo cat <<EOF > /etc/consul.d/http.json
