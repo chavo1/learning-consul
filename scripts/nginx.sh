@@ -5,8 +5,17 @@ which nginx &>/dev/null || {
     sudo apt install nginx -y
     }
 
+service nginx stop
+
 IPs=$(hostname -I | cut -f2 -d' ')
 HOST=$(hostname)
+
+# Updating nginx start page
+set -x
+rm /var/www/html/index.nginx-debian.html
+sudo curl -s 127.0.0.1:8500/v1/kv/$HOST?raw >> /var/www/html/index.nginx-debian.html
+service nginx start
+set +x
 
 sudo mkdir -p /etc/consul.d
 
@@ -42,3 +51,5 @@ EOF
 consul reload
 
 consul members
+
+

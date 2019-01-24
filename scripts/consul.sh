@@ -57,3 +57,4 @@ fi
 sleep 5
 
 consul members
+
