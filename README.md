@@ -1,7 +1,7 @@
 # Consul Labs
 
-## This repo contains a sample of Consul cluster deployment. 
-### It will spin up 6 Vagrant machines with 3 Consul servers and 3 Consul clients. The last deployed client is with Forwarded DNS - Consul DNS, to be resolved in the consul domain as well as external, more information could be found [here](https://www.consul.io/docs/guides/forwarding.html). On the clients will be installed [nginx](https://www.nginx.com/resources/wiki/) and the service will be registered. Will be created a "pkg" folder, where the specified Consul version will be download for faster deployment.
+### This repo contains a sample of Consul cluster deployment. 
+#### It will spin up 6 Vagrant machines with 3 Consul servers and 3 Consul clients. The last deployed client is with Forwarded DNS - Consul DNS, to be resolved in the consul domain as well as external, more information could be found [here](https://www.consul.io/docs/guides/forwarding.html). On the clients will be installed [nginx](https://www.nginx.com/resources/wiki/) and the service will be registered. Will be created a "pkg" folder, where the specified Consul version will be downloaded for faster deployment.
 
 #### The usage is pretty simple
 
@@ -25,7 +25,7 @@ cd learning-consul
 ```
 vagrant up
 ```
-- Check if Consul UI is available on the following addresses:
-Servers: http://192.168.56.51:8500 etc.
-Clients: http://192.168.56.61:8500 etc.
-Client with forwarded DNS: http://192.168.56.70:8500
+#### Check if Consul UI is available on the following addresses:
+- Servers: http://192.168.56.51:8500 etc.
+- Clients: http://192.168.56.61:8500 etc.
+- Client with forwarded DNS: http://192.168.56.70:8500
