@@ -33,7 +33,7 @@ which consul || {
 
 killall consul
 
-sudo mkdir -p /etc/consul.d
+sudo mkdir -p /etc/consul.d /vagrant/consul_logs
 
 ###########################
 # Starting consul servers #
@@ -45,12 +45,12 @@ if [[ $HOST =~ consul-server* ]]; then
 
     consul agent -server -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
 -bootstrap-expect=$SERVER_COUNT -retry-join=192.168.56.52 \
--retry-join=192.168.56.51 > /tmp/consul.log & 
+-retry-join=192.168.56.51 > /vagrant/consul_logs/$HOST.log & 
 
 else
     consul agent -ui -bind 0.0.0.0 -advertise $IPs -client 0.0.0.0 -data-dir=/tmp/consul \
  -enable-script-checks=true -config-dir=/etc/consul.d -retry-join=192.168.56.52 \
- -retry-join=192.168.56.51 -retry-join=192.168.56.61 -retry-join=192.168.56.62 > /tmp/consul.log & 
+ -retry-join=192.168.56.51 > /vagrant/consul_logs/$HOST.log & 
 
 fi
 
