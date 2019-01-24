@@ -1,0 +1,2359 @@
+2019/01/24 16:21:17 [INFO] serf: EventMemberJoin: consul-client01 192.168.56.61
+2019/01/24 16:21:17 [INFO] agent: Started DNS server 0.0.0.0:8600 (udp)
+2019/01/24 16:21:17 [DEBUG] agent/proxy: managed Connect proxy manager started
+2019/01/24 16:21:17 [WARN] agent/proxy: running as root, will not start managed proxies
+2019/01/24 16:21:17 [INFO] agent: Started DNS server 0.0.0.0:8600 (tcp)
+2019/01/24 16:21:17 [INFO] agent: Started HTTP server on [::]:8500 (tcp)
+2019/01/24 16:21:17 [INFO] agent: started state syncer
+2019/01/24 16:21:17 [INFO] agent: Retry join LAN is supported for: aliyun aws azure digitalocean gce k8s os packet scaleway softlayer triton vsphere
+2019/01/24 16:21:17 [INFO] agent: Joining LAN cluster...
+2019/01/24 16:21:17 [INFO] agent: (LAN) joining: [192.168.56.52 192.168.56.51]
+2019/01/24 16:21:17 [WARN] manager: No servers available
+2019/01/24 16:21:17 [ERR] agent: failed to sync remote state: No known Consul servers
+2019/01/24 16:21:17 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.52:8301
+2019/01/24 16:21:17 [INFO] serf: EventMemberJoin: consul-server01 192.168.56.51
+2019/01/24 16:21:17 [INFO] serf: EventMemberJoin: consul-dns 192.168.56.70
+2019/01/24 16:21:17 [INFO] serf: EventMemberJoin: consul-server03 192.168.56.53
+2019/01/24 16:21:17 [INFO] serf: EventMemberJoin: consul-client02 192.168.56.62
+2019/01/24 16:21:17 [INFO] serf: EventMemberJoin: consul-server02 192.168.56.52
+2019/01/24 16:21:17 [DEBUG] serf: Refuting an older leave intent
+2019/01/24 16:21:17 [INFO] consul: adding server consul-server01 (Addr: tcp/192.168.56.51:8300) (DC: dc1)
+2019/01/24 16:21:17 [INFO] consul: adding server consul-server03 (Addr: tcp/192.168.56.53:8300) (DC: dc1)
+2019/01/24 16:21:17 [INFO] consul: adding server consul-server02 (Addr: tcp/192.168.56.52:8300) (DC: dc1)
+2019/01/24 16:21:17 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.51:8301
+2019/01/24 16:21:17 [INFO] agent: (LAN) joined: 2 Err: <nil>
+2019/01/24 16:21:17 [DEBUG] agent: systemd notify failed: No socket
+2019/01/24 16:21:17 [INFO] agent: Join LAN completed. Synced with 2 initial agents
+2019/01/24 16:21:17 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:17 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:17 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   373k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:17 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:17 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:17 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:17 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:17 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:18 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:18 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:18 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:18 [DEBUG] serf: messageJoinType: consul-client01
+2019/01/24 16:21:19 [DEBUG] agent: Skipping remote check "serfHealth" since it is managed automatically
+2019/01/24 16:21:19 [INFO] agent: Synced service "web"
+2019/01/24 16:21:19 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:21:19 [INFO] agent: Synced check "http"
+2019/01/24 16:21:19 [DEBUG] agent: Node info in sync
+2019/01/24 16:21:19 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:21:19 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:21:19 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:21:19 [DEBUG] agent: Node info in sync
+2019/01/24 16:21:20 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:21:20 [DEBUG] agent: Skipping remote check "serfHealth" since it is managed automatically
+2019/01/24 16:21:20 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:21:20 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:21:20 [INFO] agent: Synced check "http"
+2019/01/24 16:21:20 [DEBUG] agent: Node info in sync
+2019/01/24 16:21:20 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:21:20 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:21:20 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:21:20 [DEBUG] agent: Node info in sync
+2019/01/24 16:21:20 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   633k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:20 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:22 [DEBUG] http: Request GET /v1/agent/members?segment=_all (1.60336ms) from=127.0.0.1:60236
+2019/01/24 16:21:22 [DEBUG] http: Request PUT /v1/kv/consul-client01 (6.77598ms) from=127.0.0.1:60238
+2019/01/24 16:21:23 [DEBUG] http: Request GET /v1/kv/consul-client01?raw (3.136326ms) from=127.0.0.1:60240
+2019/01/24 16:21:23 [INFO] agent: Caught signal:  hangup
+2019/01/24 16:21:23 [INFO] agent: Reloading configuration...
+2019/01/24 16:21:23 [DEBUG] agent: removed check "service:web"
+2019/01/24 16:21:23 [DEBUG] agent: removed service "web"
+2019/01/24 16:21:23 [DEBUG] agent: removed check "http"
+2019/01/24 16:21:23 [DEBUG] http: Request PUT /v1/agent/reload (4.416603ms) from=127.0.0.1:60242
+2019/01/24 16:21:23 [INFO] agent: Synced service "web"
+2019/01/24 16:21:23 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:21:23 [INFO] agent: Synced check "http"
+2019/01/24 16:21:23 [DEBUG] agent: Node info in sync
+2019/01/24 16:21:23 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:21:23 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:21:23 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:21:23 [DEBUG] agent: Node info in sync
+2019/01/24 16:21:23 [DEBUG] http: Request GET /v1/agent/members?segment=_all (191.002µs) from=127.0.0.1:60244
+2019/01/24 16:21:24 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:21:24 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  97466      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:24 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:27 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   108k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:27 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:30 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  33185      0 --:--:-- --:--:-- --:--:-- 34625
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:30 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:33 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   117k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:33 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:34 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:21:36 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   490k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:36 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:39 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   695k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:39 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:42 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   601k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:42 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:44 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:21:45 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   317k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:45 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:48 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   107k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:48 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:51 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   101k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:51 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:54 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:21:54 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   110k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:54 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:21:57 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   556k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:21:57 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:00 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   447k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:00 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:03 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   102k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:03 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:04 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:22:06 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   307k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:06 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:09 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   101k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:09 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:09 [DEBUG] memberlist: Stream connection from=192.168.56.53:48362
+2019/01/24 16:22:10 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.62:8301
+2019/01/24 16:22:12 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  92118      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:12 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:14 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:22:15 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  98611      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:15 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:18 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   536k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:18 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:21 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   447k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:21 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:24 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:22:24 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  98226      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:24 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:27 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   111k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:27 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:30 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   109k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:30 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:33 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   422k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:33 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:34 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:22:36 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   410k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:36 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:39 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   553k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:39 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:40 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.62:8301
+2019/01/24 16:22:42 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   107k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:42 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:44 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:22:45 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   103k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:45 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:46 [DEBUG] memberlist: Stream connection from=192.168.56.70:47682
+2019/01/24 16:22:48 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   413k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:48 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:51 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   505k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:51 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:54 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:22:54 [DEBUG] agent: Skipping remote check "serfHealth" since it is managed automatically
+2019/01/24 16:22:54 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:22:54 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:22:54 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:22:54 [DEBUG] agent: Node info in sync
+2019/01/24 16:22:54 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   435k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:54 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:22:57 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  88526      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:22:57 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:00 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   277k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:00 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:03 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   477k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:03 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:04 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:23:06 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   358k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:06 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:09 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   442k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:09 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:10 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.51:8301
+2019/01/24 16:23:12 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   133k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:12 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:14 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:23:15 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   106k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:15 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:17 [DEBUG] manager: Rebalanced 3 servers, next active server is consul-server03 (Addr: tcp/192.168.56.53:8300) (DC: dc1)
+2019/01/24 16:23:18 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   268k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:18 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:21 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   114k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:21 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:24 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:23:24 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:23:24 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:23:24 [INFO] agent: Synced check "http"
+2019/01/24 16:23:24 [DEBUG] agent: Node info in sync
+2019/01/24 16:23:24 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:23:24 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:23:24 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:23:24 [INFO] agent: Synced check "service:web"
+2019/01/24 16:23:24 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:23:24 [DEBUG] agent: Node info in sync
+2019/01/24 16:23:27 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:23:27 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:23:30 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:23:30 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:23:33 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:23:33 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:23:34 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:23:36 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   464k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:36 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:36 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:23:36 [INFO] agent: Synced check "service:web"
+2019/01/24 16:23:36 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:23:36 [DEBUG] agent: Node info in sync
+2019/01/24 16:23:39 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   100k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:39 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:40 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.53:8301
+2019/01/24 16:23:42 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  99532      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:42 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:44 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:23:44 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:23:44 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:23:44 [INFO] agent: Synced check "http"
+2019/01/24 16:23:44 [DEBUG] agent: Node info in sync
+2019/01/24 16:23:45 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   563k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:45 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:48 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   113k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:48 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:51 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  80476      0 --:--:-- --:--:-- --:--:-- 92333
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:51 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:54 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:23:54 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   492k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:23:54 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:23:57 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:23:57 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:23:57 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:23:57 [INFO] agent: Synced check "service:web"
+2019/01/24 16:23:57 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:23:57 [DEBUG] agent: Node info in sync
+2019/01/24 16:24:00 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:00 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:03 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:03 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:04 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:24:04 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:24:04 [INFO] agent: Synced check "http"
+2019/01/24 16:24:04 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:24:04 [DEBUG] agent: Node info in sync
+2019/01/24 16:24:06 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:06 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:10 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:10 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:10 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.51:8301
+2019/01/24 16:24:13 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:13 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:14 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:24:14 [DEBUG] memberlist: Stream connection from=192.168.56.51:57046
+2019/01/24 16:24:16 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:16 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:19 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:19 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:22 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:22 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:24 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:24:25 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:25 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:28 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:28 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:31 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:31 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:34 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:34 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:34 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:24:37 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:37 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:40 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:40 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:40 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.70:8301
+2019/01/24 16:24:43 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:43 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:44 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:24:46 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:46 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:47 [DEBUG] memberlist: Stream connection from=192.168.56.70:47934
+2019/01/24 16:24:49 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:49 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:52 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:52 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:54 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:24:55 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:55 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:24:58 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:24:58 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:01 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:01 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:04 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:04 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:04 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:25:07 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:07 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:09 [DEBUG] memberlist: Stream connection from=192.168.56.53:48380
+2019/01/24 16:25:10 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:10 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:10 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.51:8301
+2019/01/24 16:25:13 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:13 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:14 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:25:16 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:16 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:19 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:19 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:22 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:22 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:24 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:25:25 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:25 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:28 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:28 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:31 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:31 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:34 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:34 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:34 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:25:37 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:37 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:40 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:40 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:40 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.51:8301
+2019/01/24 16:25:43 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:43 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:44 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:25:46 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:46 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:47 [DEBUG] manager: Rebalanced 3 servers, next active server is consul-server02 (Addr: tcp/192.168.56.52:8300) (DC: dc1)
+2019/01/24 16:25:49 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:49 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:50 [DEBUG] memberlist: Stream connection from=192.168.56.52:40992
+2019/01/24 16:25:52 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:25:52 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:25:53 [DEBUG] agent: Skipping remote check "serfHealth" since it is managed automatically
+2019/01/24 16:25:53 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:25:53 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:25:53 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:25:53 [DEBUG] agent: Node info in sync
+2019/01/24 16:25:54 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:25:54 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:25:54 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:25:54 [INFO] agent: Synced check "http"
+2019/01/24 16:25:54 [DEBUG] agent: Node info in sync
+2019/01/24 16:25:55 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   111k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:25:55 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:25:55 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:25:55 [INFO] agent: Synced check "service:web"
+2019/01/24 16:25:55 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:25:55 [DEBUG] agent: Node info in sync
+2019/01/24 16:25:58 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   108k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:25:58 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:01 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   472k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:01 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:04 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:26:04 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  77460      0 --:--:-- --:--:-- --:--:-- 92333
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:04 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:07 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   329k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:07 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:10 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   102k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:10 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:10 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.51:8301
+2019/01/24 16:26:13 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   537k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:13 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:14 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:26:14 [DEBUG] memberlist: Stream connection from=192.168.56.51:57058
+2019/01/24 16:26:16 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  97810      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:16 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:19 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   107k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:19 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:22 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   104k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:22 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:24 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:26:25 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  63824      0 --:--:-- --:--:-- --:--:-- 69250
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:25 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:28 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  99568      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:28 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:31 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   529k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:31 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:34 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:26:34 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   410k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:34 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:37 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0    99k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:37 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:39 [DEBUG] memberlist: Stream connection from=192.168.56.53:48388
+2019/01/24 16:26:40 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  84425      0 --:--:-- --:--:-- --:--:-- 92333
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:40 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:40 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.62:8301
+2019/01/24 16:26:43 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   102k      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:43 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:44 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:26:46 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   561k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:46 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:49 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  84943      0 --:--:-- --:--:-- --:--:-- 92333
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:49 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:49 [DEBUG] memberlist: Stream connection from=192.168.56.62:48692
+2019/01/24 16:26:52 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   530k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:52 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:54 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:26:55 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   636k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:55 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:26:58 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  81590      0 --:--:-- --:--:-- --:--:-- 92333
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:26:58 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:01 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:27:01 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:27:01 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:27:01 [INFO] agent: Synced check "service:web"
+2019/01/24 16:27:01 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:27:01 [DEBUG] agent: Node info in sync
+2019/01/24 16:27:04 [WARN] agent: Check "http" socket connection failed: dial tcp 127.0.0.1:80: connect: connection refused
+2019/01/24 16:27:04 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:27:04 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:27:04 [INFO] agent: Synced check "http"
+2019/01/24 16:27:04 [DEBUG] agent: Node info in sync
+2019/01/24 16:27:04 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:27:04 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:27:07 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:27:07 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:27:10 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 80: Connection refused
+2019/01/24 16:27:10 [WARN] agent: Check "service:web" is now critical
+2019/01/24 16:27:10 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.70:8301
+2019/01/24 16:27:13 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   595k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:13 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:13 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:27:13 [INFO] agent: Synced check "service:web"
+2019/01/24 16:27:13 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:27:13 [DEBUG] agent: Node info in sync
+2019/01/24 16:27:14 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:27:14 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:27:14 [DEBUG] agent: Check "service:web" in sync
+2019/01/24 16:27:14 [INFO] agent: Synced check "http"
+2019/01/24 16:27:14 [DEBUG] agent: Node info in sync
+2019/01/24 16:27:16 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   589k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:16 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:17 [DEBUG] memberlist: Stream connection from=192.168.56.70:48238
+2019/01/24 16:27:19 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   647k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:19 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:20 [DEBUG] memberlist: Stream connection from=192.168.56.52:41000
+2019/01/24 16:27:22 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   524k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:22 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:24 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:27:25 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   289k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:25 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:28 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   500k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:28 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:31 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   547k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:31 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:34 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:27:34 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   469k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:34 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:37 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   548k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:37 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:40 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.53:8301
+2019/01/24 16:27:40 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  90345      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:40 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:43 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   513k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:43 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:44 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:27:46 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   599k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:46 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:49 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   684k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:49 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:52 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  86806      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:52 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:54 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:27:55 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   508k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:55 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:58 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   671k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:27:58 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:27:59 [DEBUG] manager: Rebalanced 3 servers, next active server is consul-server03 (Addr: tcp/192.168.56.53:8300) (DC: dc1)
+2019/01/24 16:28:01 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   454k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:01 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:04 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:28:04 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   463k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:04 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:06 [DEBUG] agent: Service "web" in sync
+2019/01/24 16:28:06 [INFO] agent: Synced check "service:web"
+2019/01/24 16:28:06 [DEBUG] agent: Check "http" in sync
+2019/01/24 16:28:06 [DEBUG] agent: Node info in sync
+2019/01/24 16:28:07 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   365k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:07 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:10 [DEBUG] memberlist: Initiating push/pull sync with: 192.168.56.52:8301
+2019/01/24 16:28:10 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   404k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:10 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:13 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   306k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:13 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:14 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:28:16 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   531k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:16 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:19 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  79873      0 --:--:-- --:--:-- --:--:-- 92333
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:19 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:20 [DEBUG] memberlist: Stream connection from=192.168.56.52:41006
+2019/01/24 16:28:22 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   212k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:22 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:24 [DEBUG] agent: Check "http" is passing
+2019/01/24 16:28:25 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0   225k      0 --:--:-- --:--:-- --:--:--  270k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:25 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:28 [DEBUG] memberlist: Failed ping: consul-dns (timeout reached)
+2019/01/24 16:28:28 [INFO] memberlist: Suspect consul-dns has failed, no acks received
+2019/01/24 16:28:28 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  93802      0 --:--:-- --:--:-- --:--:--  135k
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:28 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:31 [INFO] memberlist: Marking consul-dns as failed, suspect timeout reached (2 peer confirmations)
+2019/01/24 16:28:31 [INFO] serf: EventMemberFailed: consul-dns 192.168.56.70
+2019/01/24 16:28:32 [TRACE] agent: Check "service:web" output:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   277  100   277    0     0  56680      0 --:--:-- --:--:-- --:--:-- 69250
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx form consul-client01!</h1>
+</body>
+</html>
+2019/01/24 16:28:32 [DEBUG] agent: Check "service:web" is passing
+2019/01/24 16:28:32 [DEBUG] memberlist: Failed ping: consul-client02 (timeout reached)
