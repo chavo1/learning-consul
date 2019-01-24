@@ -16,4 +16,3 @@ server=8.8.8.8
 EOF
 
 sudo systemctl restart dnsmasq
-
