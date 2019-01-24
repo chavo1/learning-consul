@@ -4,6 +4,11 @@ CONSUL_VERSION = '1.4.0'
 
 Vagrant.configure(2) do |config|
     config.vm.box = "chavo1/xenial64base"
+    config.vm.provider "virtualbox" do |v|
+      v.memory = 512
+      v.cpus = 2
+    
+    end
 
     1.upto(SERVER_COUNT) do |n|
       config.vm.define "consul-server0#{n}" do |server|
