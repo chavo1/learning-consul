@@ -10,12 +10,30 @@ service nginx stop
 IPs=$(hostname -I | cut -f2 -d' ')
 HOST=$(hostname)
 
-# Updating nginx start page
+
+#!/usr/bin/env bash
+
+sudo mkdir -p /vagrant/pkg
+
+if which envconsul >/dev/null; then
+
+echo $nginx > /var/www/html/index.nginx-debian.html
+
+# Another examples
+# envconsul -pristine -prefix nginx env | sed 's/consul-client01=//g' > /var/www/html/index.nginx-debian.html
+# export `envconsul -pristine -prefix nginx env`; env
+else
+  
+  # Updating nginx start page
 set -x
 rm /var/www/html/index.nginx-debian.html
-sudo curl -s 127.0.0.1:8500/v1/kv/$HOST?raw >> /var/www/html/index.nginx-debian.html
-service nginx start
+sudo curl -s 127.0.0.1:8500/v1/kv/consul-client01/nginx?raw > /var/www/html/index.nginx-debian.html
+
 set +x
+
+fi
+
+service nginx start
 
 sudo mkdir -p /etc/consul.d
 

@@ -20,7 +20,7 @@ curl -s \
 <h1>Welcome to nginx form '$HOST'!</h1>
 </body>
 </html>' \
-    http://127.0.0.1:8500/v1/kv/$HOST
+    http://127.0.0.1:8500/v1/kv/$HOST/nginx
 
 
 
