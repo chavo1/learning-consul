@@ -5,7 +5,8 @@
 - The last deployed client is with Forwarded DNS - Consul DNS, to be resolved in the consul domain as well as external, more information could be found [here](https://www.consul.io/docs/guides/forwarding.html). 
 - On the clients will be installed [nginx](https://www.nginx.com/resources/wiki/) and the service will be registered.
 - Will be created a "pkg" folder, where the specified Consul version will be downloaded for faster deployment.
-- For Consul logs will be created a "consul_logs" drectory
+- For Consul logs will be created a "consul_logs" directory
+- For testing purpose is created an "infinite_loop.sh" script in folder "scripts".
 
 #### The usage is pretty simple
 
@@ -33,3 +34,11 @@ vagrant up
 - Servers: http://192.168.56.51:8500 etc.
 - Clients: http://192.168.56.61:8500 etc.
 - Client with forwarded DNS: http://192.168.56.70:8500
+
+#### Then you can start the "infinite_loop.sh" from consul-dns manually - it will start a curl to web.service.consul and must be stopped manually.
+```
+vagrant ssh consul-dns
+sudo su -
+/vagrant/scripts/infinite_loop.sh
+```
+- open the "/vagrant/consul_logs/loop.log" in order to check the Consul load balancing

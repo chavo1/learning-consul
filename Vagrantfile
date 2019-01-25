@@ -1,6 +1,6 @@
 SERVER_COUNT = 3
 CLIENT_COUNT = 2
-CONSUL_VERSION = '1.4.0'
+CONSUL_VERSION = '1.4.1'
 
 Vagrant.configure(2) do |config|
     config.vm.box = "chavo1/xenial64base"
