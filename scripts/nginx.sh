@@ -10,9 +10,6 @@ service nginx stop
 IPs=$(hostname -I | cut -f2 -d' ')
 HOST=$(hostname)
 
-
-#!/usr/bin/env bash
-
 sudo mkdir -p /vagrant/pkg
 
 if which envconsul >/dev/null; then
