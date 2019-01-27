@@ -21,7 +21,7 @@ ENVCONSUL_VERSION = '0.7.3'
 ```
 #### Additionaly I installed [NGINX](https://www.nginx.com/resources/wiki/) with [envconsul](https://github.com/hashicorp/envconsul) if this not needed you can simply comment the 'call_nginx.sh' in Vagrantfile and uncomment 'nginx.sh'. This will populate the 'Welcome to NGINX!' page with API.
 
-#### Now we are ready to start, just follow the steps:
+### Now we are ready to start, just follow the steps:
 
 - Clone the repo
 ```
