@@ -12,12 +12,14 @@
 
 - Vagrant should be [installed](https://www.vagrantup.com/)
 - Git should be [installed](https://git-scm.com/)
-- Since [Consul](https://www.consul.io/) require at least 3 servers in order to survive 1 server failure. Quorum requires at least (n/2)+1 members. If we need more servers, clients or a specific Consul version - it is simple as just change the numbers in the Vagrantfile
+- Since [Consul](https://www.consul.io/) require at least 3 servers in order to survive 1 server failure. Quorum requires at least (n/2)+1 members. If we need more servers, clients or a specific Consul or envconsul version - it is simple as just change the numbers in the Vagrantfile
 ```
 SERVER_COUNT = 3
 CLIENT_COUNT = 2
 CONSUL_VERSION = '1.4.0'
+ENVCONSUL_VERSION = '0.7.3'
 ```
+#### Additionaly I installed [NGINX](https://www.nginx.com/resources/wiki/) with [envconsul](https://github.com/hashicorp/envconsul) if this not needed you can simply comment the 'call_nginx.sh' in Vagrantfile and uncomment 'nginx.sh'. This will populate the 'Welcome to NGINX!' page with API.
 
 #### Now we are ready to start, just follow the steps:
 
@@ -46,4 +48,3 @@ sudo su -
 tail -f /vagrant/consul_logs/loop.log
 ```
 
-#### Additionaly I installed [NGINX](https://www.nginx.com/resources/wiki/) with [envconsul](https://github.com/hashicorp/envconsul) if this not needed you can simply comment the 'call_nginx.sh' in Vagrantfile and uncomment 'nginx.sh'. This will populate the 'Welcome to NGINX!' page with API.
