@@ -24,7 +24,7 @@ else
   # Updating nginx start page
 set -x
 rm /var/www/html/index.nginx-debian.html
-sudo curl -s 127.0.0.1:8500/v1/kv/consul-client01/nginx?raw > /var/www/html/index.nginx-debian.html
+sudo curl -s 127.0.0.1:8500/v1/kv/$HOST/nginx?raw > /var/www/html/index.nginx-debian.html
 
 set +x
 
