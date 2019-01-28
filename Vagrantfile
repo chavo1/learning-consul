@@ -1,7 +1,8 @@
-SERVER_COUNT = 3
+SERVER_COUNT = 1
 CLIENT_COUNT = 2
 CONSUL_VERSION = '1.4.1'
 ENVCONSUL_VERSION = '0.7.3'
+CONSUL_TEMPLATE_VERSION = '0.19.5'
 
 Vagrant.configure(2) do |config|
     config.vm.box = "chavo1/xenial64base"
@@ -25,10 +26,11 @@ Vagrant.configure(2) do |config|
         client.vm.hostname = "consul-client0#{n}"
         client.vm.network "private_network", ip: "192.168.56.#{60+n}"
         client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul.sh", env: {"CONSUL_VERSION" => CONSUL_VERSION}
-        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/envconsul.sh", env: {"ENVCONSUL_VERSION" => ENVCONSUL_VERSION}
+        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul-template.sh", env: {"CONSUL_TEMPLATE_VERSION" => CONSUL_TEMPLATE_VERSION}
+        #client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/envconsul.sh", env: {"ENVCONSUL_VERSION" => ENVCONSUL_VERSION}
         client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/kv.sh"
-        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/call_nginx.sh"
-        #client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh"
+        #client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/call_nginx.sh"
+        client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh"
         
       end
     end

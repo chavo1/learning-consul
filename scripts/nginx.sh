@@ -12,6 +12,7 @@ HOST=$(hostname)
 
 sudo mkdir -p /vagrant/pkg
 
+# If we need envconsul
 if which envconsul >/dev/null; then
 
 echo $nginx > /var/www/html/index.nginx-debian.html
@@ -19,6 +20,15 @@ echo $nginx > /var/www/html/index.nginx-debian.html
 # Another examples
 # envconsul -pristine -prefix nginx env | sed 's/consul-client01=//g' > /var/www/html/index.nginx-debian.html
 # export `envconsul -pristine -prefix nginx env`; env
+
+# If we consul-template
+elif  which consul-template >/dev/null; then
+
+set -x
+export HOST=$HOST
+consul-template -config=/vagrant/templates/config.hcl > /vagrant/consul_logs/template_$HOST.log & 
+set +x
+
 else
   
   # Updating nginx start page
@@ -66,5 +76,3 @@ EOF
 consul reload
 
 consul members
-
-

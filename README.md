@@ -18,8 +18,26 @@ SERVER_COUNT = 3
 CLIENT_COUNT = 2
 CONSUL_VERSION = '1.4.0'
 ENVCONSUL_VERSION = '0.7.3'
+CONSUL_TEMPLATE_VERSION = '0.19.5'
 ```
-#### Additionaly I installed [NGINX](https://www.nginx.com/resources/wiki/) with [envconsul](https://github.com/hashicorp/envconsul) if this not needed you can simply comment the 'call_nginx.sh' in Vagrantfile and uncomment 'nginx.sh'. This will populate the 'Welcome to NGINX!' page with API.
+#### Additionally there is 3 way to populate the [NGINX](https://www.nginx.com/resources/wiki/) Welcome page:
+
+- With [envconsul](https://github.com/hashicorp/envconsul) - Just comment 'nginx.sh' and 'consul-template.sh' under the Client section.
+```
+#client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul-template.sh", env: {"CONSUL_TEMPLATE_VERSION" => CONSUL_TEMPLATE_VERSION}
+#client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/nginx.sh"
+```
+- With [consul-template](https://github.com/hashicorp/consul-template) - Just comment 'envconsul.sh' and 'call_nginx.sh' under the Client section.
+```
+#client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/envconsul.sh", env: {"ENVCONSUL_VERSION" => ENVCONSUL_VERSION}
+#client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/call_nginx.sh"
+```
+- With [API](https://www.consul.io/api/kv.html) - Just comment 'consul-template.sh', 'envconsul.sh' and 'call_nginx.sh' under the Client section.
+```
+#client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/consul-template.sh", env: {"CONSUL_TEMPLATE_VERSION" => CONSUL_TEMPLATE_VERSION}
+#client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/envconsul.sh", env: {"ENVCONSUL_VERSION" => ENVCONSUL_VERSION}
+#client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/call_nginx.sh"
+ ```
 
 ### Now we are ready to start, just follow the steps:
 
