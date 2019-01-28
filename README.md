@@ -20,6 +20,7 @@ CONSUL_VERSION = '1.4.0'
 ENVCONSUL_VERSION = '0.7.3'
 CONSUL_TEMPLATE_VERSION = '0.19.5'
 ```
+
 #### Additionally there is 3 way to populate the [NGINX](https://www.nginx.com/resources/wiki/) Welcome page:
 
 - With [envconsul](https://github.com/hashicorp/envconsul) - Just comment 'nginx.sh' and 'consul-template.sh' under the Client section.
@@ -38,6 +39,7 @@ CONSUL_TEMPLATE_VERSION = '0.19.5'
 #client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/envconsul.sh", env: {"ENVCONSUL_VERSION" => ENVCONSUL_VERSION}
 #client.vm.provision "shell",inline: "cd /vagrant ; bash scripts/call_nginx.sh"
  ```
+
 
 ### Now we are ready to start, just follow the steps:
 
